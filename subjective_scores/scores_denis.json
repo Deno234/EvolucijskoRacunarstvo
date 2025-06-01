@@ -1,0 +1,62 @@
+[
+  {
+    "input_file": "b.txt",
+    "model_A": "model1",
+    "model_B": "model3",
+    "model_A_output_file": "model1_b_output.txt",
+    "model_B_output_file": "model3_b_output.txt",
+    "decision": "A",
+    "timestamp": "2025-06-01T22:04:47.073Z",
+    "question_number": 1
+  },
+  {
+    "input_file": "a.txt",
+    "model_A": "model2",
+    "model_B": "model3",
+    "model_A_output_file": "model2_a_output.txt",
+    "model_B_output_file": "model3_a_output.txt",
+    "decision": "B",
+    "timestamp": "2025-06-01T22:04:48.863Z",
+    "question_number": 2
+  },
+  {
+    "input_file": "b.txt",
+    "model_A": "model2",
+    "model_B": "model3",
+    "model_A_output_file": "model2_b_output.txt",
+    "model_B_output_file": "model3_b_output.txt",
+    "decision": "A",
+    "timestamp": "2025-06-01T22:04:49.860Z",
+    "question_number": 3
+  },
+  {
+    "input_file": "a.txt",
+    "model_A": "model1",
+    "model_B": "model3",
+    "model_A_output_file": "model1_a_output.txt",
+    "model_B_output_file": "model3_a_output.txt",
+    "decision": "B",
+    "timestamp": "2025-06-01T22:04:50.745Z",
+    "question_number": 4
+  },
+  {
+    "input_file": "a.txt",
+    "model_A": "model1",
+    "model_B": "model2",
+    "model_A_output_file": "model1_a_output.txt",
+    "model_B_output_file": "model2_a_output.txt",
+    "decision": "TIE",
+    "timestamp": "2025-06-01T22:04:51.847Z",
+    "question_number": 5
+  },
+  {
+    "input_file": "b.txt",
+    "model_A": "model1",
+    "model_B": "model2",
+    "model_A_output_file": "model1_b_output.txt",
+    "model_B_output_file": "model2_b_output.txt",
+    "decision": "BAD",
+    "timestamp": "2025-06-01T22:04:52.891Z",
+    "question_number": 6
+  }
+]

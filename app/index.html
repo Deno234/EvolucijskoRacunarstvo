@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Model Evaluator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🤖 AI Model Evaluator</h1>
+            <div class="progress">
+                <span id="progress-text">Pitanje 1 od 100</span>
+                <div class="progress-bar">
+                    <div id="progress-fill"></div>
+                </div>
+            </div>
+        </header>
+
+        <div class="input-section">
+            <h2>📝 Ulazni tekst:</h2>
+            <div id="input-text" class="input-display"></div>
+        </div>
+
+        <div class="comparison-section">
+            <div class="model-card" id="model-a-card">
+                <h3>Model A</h3>
+                <div id="model-a-output" class="output-text"></div>
+            </div>
+            
+            <div class="model-card" id="model-b-card">
+                <h3>Model B</h3>
+                <div id="model-b-output" class="output-text"></div>
+            </div>
+        </div>
+
+        <div class="voting-section">
+            <h3>Koji model je bolji?</h3>
+            <div class="vote-buttons">
+                <button id="vote-a" class="vote-btn">Model A bolji</button>
+                <button id="vote-b" class="vote-btn">Model B bolji</button>
+                <button id="vote-tie" class="vote-btn tie">Neodlučeno</button>
+                <button id="vote-bad" class="vote-btn bad">Oba loša</button>
+            </div>
+        </div>
+
+        <div class="user-section">
+            <label for="username">Vaše ime:</label>
+            <input type="text" id="username" placeholder="Unesite vaše ime" value="denis">
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
