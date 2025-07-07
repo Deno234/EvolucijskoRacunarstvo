@@ -201,3 +201,35 @@ header h1 {
         align-items: center;
     }
 }
+/* Dodajte ovo na kraj vaše style.css datoteke */
+.hidden {
+    display: none;
+}
+
+#user-prompt {
+    padding: 40px;
+    text-align: center;
+}
+
+#user-prompt h2 {
+    margin-bottom: 15px;
+}
+
+#user-prompt p {
+    margin-bottom: 20px;
+}
+
+#username-input {
+    width: 100%;
+    max-width: 300px;
+    padding: 12px;
+    border: 2px solid #e9ecef;
+    border-radius: 8px;
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+
+#start-evaluation-btn {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Evaluacija AI modela</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="container">
+        <!-- 1. Ekran za unos imena -->
+        <div id="user-prompt">
+            <h2>Dobrodošli u evaluaciju modela</h2>
+            <p>Molimo unesite Vaše ime za početak.</p>
+            <input type="text" id="username-input" placeholder="Vaše ime" />
+            <button id="start-evaluation-btn" class="vote-btn">Započni evaluaciju</button>
+        </div>
+
+        <!-- 2. Glavni dio aplikacije (skriven po defaultu) -->
+        <div id="evaluation-wrapper" class="hidden">
+            <header>
+                <h1>Evaluacija AI modela</h1>
+                <div class="progress">
+                    <div class="progress-bar">
+                        <div id="progress-fill"></div>
+                    </div>
+                    <div id="progress-text">Pitanje 0 od 0</div>
+                </div>
+            </header>
+
+            <section class="input-section">
+                <h2>Ulazni tekst:</h2>
+                <pre id="input-text"></pre>
+            </section>
+
+            <section class="comparison-section">
+                <div class="model-card">
+                    <h3 id="model-a-name">Model A</h3>
+                    <pre id="model-a-output" class="output-text"></pre>
+                </div>
+                <div class="model-card">
+                    <h3 id="model-b-name">Model B</h3>
+                    <pre id="model-b-output" class="output-text"></pre>
+                </div>
+            </section>
+
+            <section class="voting-section">
+                <h3>Koji model je bolji?</h3>
+                <div class="vote-buttons">
+                    <button id="vote-a" class="vote-btn">Model A bolji</button>
+                    <button id="vote-b" class="vote-btn">Model B bolji</button>
+                    <button id="vote-tie" class="vote-btn tie">Neodlučeno</button>
+                    <button id="vote-bad" class="vote-btn bad">Oba loša</button>
+                </div>
+            </section>
+        </div>
+
+        <!-- 3. Ekran za završetak (prazan, puni ga JS) -->
+        <div id="completion-screen" class="hidden"></div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
